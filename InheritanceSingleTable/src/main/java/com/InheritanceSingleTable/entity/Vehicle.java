@@ -22,67 +22,20 @@ public class Vehicle {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int vid;
-	
+
 	@Column(length = 10)
 	private String fuel;
-	
-	@Column(length =10) 
+
+	@Column(length = 10)
 	private String enginePower;
-	
-	@Column (length = 4)
+
+	@Column(length = 4)
 	private int speed;
-	
-	@Column (length = 10)
+
+	@Column(length = 10)
 	private String vtype;
-	
+
 	@Column(length = 4)
 	private int price;
 
-	public int getVid() {
-		return vid;
-	}
-
-	public String getFuel() {
-		return fuel;
-	}
-
-	public void setFuel(String fuel) {
-		this.fuel = fuel;
-	}
-
-	public String getEnginePower() {
-		return enginePower;
-	}
-
-	public void setEnginePower(String enginePower) {
-		this.enginePower = enginePower;
-	}
-
-	public int getSpeed() {
-		return speed;
-	}
-
-	public void setSpeed(int speed) {
-		this.speed = speed;
-	}
-
-	public String getVtype() {
-		return vtype;
-	}
-
-	public void setVtype(String vtype) {
-		this.vtype = vtype;
-	}
-
-	public int getPrice() {
-		return price;
-	}
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
-
-	public void setVid(int vid) {
-		this.vid = vid;
-	}
 }
